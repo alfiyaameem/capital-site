@@ -32,19 +32,9 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
-        {/* Logo */}
-        <Link to="/" className="flex items-center gap-3">
-          {/* Logo placeholder — replace with <img src="/logo.svg" ... /> */}
-          <div className="w-10 h-10 bg-grass flex items-center justify-center">
-            <span className={`text-white font-display font-bold text-lg`}>C</span>
-          </div>
-          <span
-            className={`font-display font-semibold text-xl tracking-tight transition-colors ${
-              scrolled ? 'text-ink' : 'text-white'
-            }`}
-          >
-            Capital Group
-          </span>
+        {/* Logo — replace comment with <img src="/logo.svg" className="h-10" /> */}
+        <Link to="/">
+          {/* logo goes here */}
         </Link>
 
         {/* Desktop nav */}

@@ -7,11 +7,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Brand */}
         <div className="lg:col-span-1">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-9 h-9 bg-grass flex items-center justify-center">
-              <span className="text-white font-display font-bold">C</span>
-            </div>
-            <span className="font-display font-semibold text-lg">Capital Group</span>
+          <div className="mb-6">
+            {/* Logo goes here — e.g. <img src="/logo.svg" className="h-9" /> */}
           </div>
           <p className="font-body text-steel-light text-sm leading-relaxed mb-6">
             A global financial services firm specializing in loan syndication, strategic investments, and wealth management for institutional and individual clients.
@@ -95,7 +92,7 @@ export default function Footer() {
       <div className="border-t border-ink-soft">
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-body text-xs text-steel">
-            © {new Date().getFullYear()} Capital Group. All Rights Reserved.
+            © {new Date().getFullYear()} All Rights Reserved.
           </p>
           <div className="flex gap-6">
             {['Terms of Service', 'Privacy Policy', 'Disclaimer'].map((item) => (
