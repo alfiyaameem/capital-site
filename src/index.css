@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-ink font-body antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block bg-grass text-white px-6 py-3 text-sm font-body font-medium tracking-wide uppercase transition-all duration-200 hover:bg-grass-dark;
+  }
+
+  .btn-outline {
+    @apply inline-block border border-grass text-grass px-6 py-3 text-sm font-body font-medium tracking-wide uppercase transition-all duration-200 hover:bg-grass hover:text-white;
+  }
+
+  .btn-ghost {
+    @apply inline-block border border-white text-white px-6 py-3 text-sm font-body font-medium tracking-wide uppercase transition-all duration-200 hover:bg-white hover:text-ink;
+  }
+
+  .section-label {
+    @apply text-grass font-body text-xs font-semibold tracking-[0.2em] uppercase;
+  }
+
+  .divider-grass {
+    @apply w-12 h-0.5 bg-grass my-4;
+  }
+}
